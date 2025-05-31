@@ -127,23 +127,10 @@
             }
             map.setMaxBounds(map.getBounds());
         }
-        map.createPane('pane_OSMStandard_0');
-        map.getPane('pane_OSMStandard_0').style.zIndex = 400;
-        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OSMStandard_0',
-            opacity: 1.0,
-            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
-        });
-        layer_OSMStandard_0;
-        map.addLayer(layer_OSMStandard_0);
-        map.createPane('pane_GoogleSatellite_1');
-        map.getPane('pane_GoogleSatellite_1').style.zIndex = 401;
-        var layer_GoogleSatellite_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleSatellite_1',
+        map.createPane('pane_GoogleSatellite_0');
+        map.getPane('pane_GoogleSatellite_0').style.zIndex = 400;
+        var layer_GoogleSatellite_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatellite_0',
             opacity: 1.0,
             attribution: '<a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
             minZoom: 1,
@@ -151,8 +138,21 @@
             minNativeZoom: 0,
             maxNativeZoom: 20
         });
-        layer_GoogleSatellite_1;
-        map.addLayer(layer_GoogleSatellite_1);
+        layer_GoogleSatellite_0;
+        map.addLayer(layer_GoogleSatellite_0);
+        map.createPane('pane_OSMStandard_1');
+        map.getPane('pane_OSMStandard_1').style.zIndex = 401;
+        var layer_OSMStandard_1 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OSMStandard_1',
+            opacity: 1.0,
+            attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_OSMStandard_1;
+        map.addLayer(layer_OSMStandard_1);
         function pop_anni2008_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -245,7 +245,6 @@
             style: style_anni2008_2_0,
         });
         bounds_group.addLayer(layer_anni2008_2);
-        map.addLayer(layer_anni2008_2);
         function pop_anno2009_3(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -338,7 +337,6 @@
             style: style_anno2009_3_0,
         });
         bounds_group.addLayer(layer_anno2009_3);
-        map.addLayer(layer_anno2009_3);
         function pop_anno2010_4(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -431,7 +429,6 @@
             style: style_anno2010_4_0,
         });
         bounds_group.addLayer(layer_anno2010_4);
-        map.addLayer(layer_anno2010_4);
         function pop_anno2011_5(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -524,7 +521,6 @@
             style: style_anno2011_5_0,
         });
         bounds_group.addLayer(layer_anno2011_5);
-        map.addLayer(layer_anno2011_5);
         function pop_anno2012_6(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -617,7 +613,6 @@
             style: style_anno2012_6_0,
         });
         bounds_group.addLayer(layer_anno2012_6);
-        map.addLayer(layer_anno2012_6);
         function pop_anno2013_7(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -710,7 +705,6 @@
             style: style_anno2013_7_0,
         });
         bounds_group.addLayer(layer_anno2013_7);
-        map.addLayer(layer_anno2013_7);
         function pop_anno2014_8(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -803,7 +797,6 @@
             style: style_anno2014_8_0,
         });
         bounds_group.addLayer(layer_anno2014_8);
-        map.addLayer(layer_anno2014_8);
         function pop_anno2015_9(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -896,7 +889,6 @@
             style: style_anno2015_9_0,
         });
         bounds_group.addLayer(layer_anno2015_9);
-        map.addLayer(layer_anno2015_9);
         function pop_anno2016_10(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -989,7 +981,6 @@
             style: style_anno2016_10_0,
         });
         bounds_group.addLayer(layer_anno2016_10);
-        map.addLayer(layer_anno2016_10);
         function pop_anno2017_11(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1082,7 +1073,6 @@
             style: style_anno2017_11_0,
         });
         bounds_group.addLayer(layer_anno2017_11);
-        map.addLayer(layer_anno2017_11);
         function pop_anno2018_12(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1175,7 +1165,6 @@
             style: style_anno2018_12_0,
         });
         bounds_group.addLayer(layer_anno2018_12);
-        map.addLayer(layer_anno2018_12);
         function pop_anno2019_13(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1268,7 +1257,6 @@
             style: style_anno2019_13_0,
         });
         bounds_group.addLayer(layer_anno2019_13);
-        map.addLayer(layer_anno2019_13);
         function pop_anno2020_14(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1361,7 +1349,6 @@
             style: style_anno2020_14_0,
         });
         bounds_group.addLayer(layer_anno2020_14);
-        map.addLayer(layer_anno2020_14);
         function pop_anno2021_15(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1454,7 +1441,6 @@
             style: style_anno2021_15_0,
         });
         bounds_group.addLayer(layer_anno2021_15);
-        map.addLayer(layer_anno2021_15);
         function pop_anno2022_16(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1547,7 +1533,6 @@
             style: style_anno2022_16_0,
         });
         bounds_group.addLayer(layer_anno2022_16);
-        map.addLayer(layer_anno2022_16);
         function pop_anno2023_17(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1640,7 +1625,6 @@
             style: style_anno2023_17_0,
         });
         bounds_group.addLayer(layer_anno2023_17);
-        map.addLayer(layer_anno2023_17);
         function pop_Individuazioneanomaliaanno2023_18(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1742,8 +1726,8 @@
             {label: '<img src="legend/anno2010_4.png" /> anno 2010', layer: layer_anno2010_4},
             {label: '<img src="legend/anno2009_3.png" /> anno 2009', layer: layer_anno2009_3},
             {label: '<img src="legend/anni2008_2.png" /> anni 2008', layer: layer_anni2008_2},]},
-            {label: "Google Satellite", layer: layer_GoogleSatellite_1, radioGroup: 'bm' },
-            {label: "OSM Standard", layer: layer_OSMStandard_0, radioGroup: 'bm' },]
+            {label: "OSM Standard", layer: layer_OSMStandard_1},
+            {label: "Google Satellite", layer: layer_GoogleSatellite_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
